@@ -306,8 +306,155 @@ profile('bucky', 42, 43, 76, 54, 98)
 
 # 30 - Parameter Types
 
+def cart(**items):
+    print items
+
+cart(apples=4,peaches=6,beef=60)
+
+def profile(first,last,*ages, **items):
+    print first, last
+    print ages
+    print items
+
+profile('buc', 'rob', 32,43,76,65,47, bacon=4, saus=64)
+
+# 31 - Tuples as Parameters
+
+def example(a,b,c):
+    return a+b*c
+
+tuna=(5,7,3)
+example(*tuna)
+
+def example2(**this):
+    print this
+
+bacon=('mom':32,'dad':54)
+example(**bacon)
+
+# 32 - Object Oriented Program
+
+class exampleClass:
+    eyes="blue"
+    age=22
+    def thisMethod(self):
+        return 'hey this method worked'
+
+exampleClass
+exampleObject = exampleClass()
+exampleObject.eyes
+exampleObject.age
+exampleObject.thisMethod()
+
+# 33 - Classes and Self
+
+class className:
+    def createName(self, name):
+        self.name=name
+    def displayName(self):
+        return self.name
+    def saying(self):
+        print "hello %s" % self.name
+
+className
+first=className()
+second=className()
+first.createname('bucky')
+second.createname('tony')
+first.saying()
+first.displayName()
+first.name
+
+# 34 - Subclasses Superclasses
+
+class parentClass:
+    varl="i am var1"
+    var2="i am var2"
+
+class childClass(parentClass):
+    pass
+
+parentObject=parentClass()
+parentObject.var1
+childObject=childClass()
+childObject.var2
+
+# 35 - overwrite Variable on Sub
+
+class parent:
+    varl="bacon"
+    var2="jazz"
+
+class child(parent):
+    var2="toast"
+
+pop=parent()
+cob=child()
+pob.var1
+pob.var2
+cob.var1
+cob.var2
+
+# 36 - Multiple Parent Classes
+
+class Mom:
+    var1="hey im mom"
+
+class Dad:
+    var3="hey son im adad"
+
+class child(Mom,Dad):
+    var3="I am a new var"
+
+childObj = child()
+childObj.var1
+childObj.var2
+childObj.var3
+
+# 37 - Constructors
+
+class swine:
+    def apples(self):
+        ptint "beef pie"
+
+obj = swine()
+obj.apples()
+
+class new:
+    def __init__(self):
+        print "this is a constructor"
+        print "this also print out"
+
+newobj = new();
+
+# 38 - Import Modules
+
+# creat module
+
+#def testmod():
+#    print "this baby worked"
+
+# import swineflu
+# swineflu.testmod()
+
+# we can only import once in each session
+
+# 39 - reload Modules
+
+# baby=swineflu.testmod
+# baby()
+
+# reload(swineflu)
+
+# 40 - Getting Module Info
+
+import math
+math.sqrt(81)
+dir(math)
 
 
-    
+
+
+
 raw_input("Press<enter>")
 
