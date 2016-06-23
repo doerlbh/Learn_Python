@@ -343,7 +343,7 @@ ages
 for item in ages:
     print item
 
-for item inages:
+for item in ages:
     print item, ages[item]
 
 while 1:
