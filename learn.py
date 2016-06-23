@@ -1,4 +1,89 @@
+# 1 - Installing Python
 
+print "Hello, World!"
+
+# 2 - Numbers and Math
+
+2+2
+6-3
+18/3
+18/7
+18.0/7
+18/7.0
+18/7.
+18%7
+8.75%0.5
+6**7
+8**2
+-5**2
+
+# 3 - Variables
+
+x = 18
+x + 15
+X ** 3
+y = 54
+X + y
+
+g = input("Enter number here: ")
+43
+g + 32
+
+# 4 - Modules and Functions
+
+5 ** 4
+pow(5,4)
+abs(-18)
+
+import math
+math.floor(18.4)
+math.sqrt(81)
+
+bucky = math.sqrt
+bucky(9)
+
+# 5 - Save your programs
+
+x = raw_input("Enter name: ")
+print "Hey " + x
+raw_input("Press<enter>")
+
+# 6 - Strings
+
+"hey now"
+"he's a jerk"
+"he said\"adfad\" hahaha"
+
+a = "buc"
+b = "rob"
+a+b
+a,b
+
+# 7 - More on Strings
+
+num = str(18)
+print "bucky is " + num
+
+num2 = 32
+print "my mom is " + `num2`
+
+repr(32)
+
+
+# 8 - Raw input
+
+buck = input("Enter name: ")
+# not necessary string
+raw_input("Enter name: ")
+# always change into string
+
+# 9 - Sequences and Lists
+
+family = ['mom','dad','bro','sis','dog']
+family[3]
+family[-1]
+
+'bucky'[3]
 
 #10 - Slicing
 
@@ -429,7 +514,7 @@ newobj = new();
 
 # 38 - Import Modules
 
-# creat module
+-# creat module
 
 #def testmod():
 #    print "this baby worked"
@@ -451,9 +536,42 @@ newobj = new();
 import math
 math.sqrt(81)
 dir(math)
+help(math)
 
+math.__doc__
 
+# 41 - Working with Files
 
+fob=open('c:/test/a.txt','w')
+fob.write('hey now brown cow')
+fob.close()
+
+fob=open('c:/test/a.txt','r')
+fob.read(3)
+fob.read()
+fob.close()
+
+# 42 - Reading and Writing
+
+fob=open('c:/test/a.txt','r')
+print fob.readline()
+print fob.readlines()
+fob.close()
+fob=open('c:/test/a.txt','w')
+fob.write('this is line\nthis is line2\nthis is final line')
+fob.close()
+
+# 43 - Writing Lines
+
+fob=open('c:/test/a.txt','r')
+listme=fob.readlines()
+listme
+fob.close()
+listme[2]="mmm i sure love bacon"
+listme
+fob=open('c:/test/a.txt','w')
+fob.writelines(listme)
+fob.close()
 
 
 raw_input("Press<enter>")
