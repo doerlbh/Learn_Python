@@ -239,6 +239,75 @@ if example > 3 or example < 4:
     print 'this works'
 
 # 25 - For and While Loops
+
+b = 1
+b
+while b<=10:
+    print b
+    b+=1
+
+g1 = ['bread', 'milk', 'meat', 'beef']
+g1
+for food in g1:
+    print 'I want ' + food
+
+# 26 - Infinite Loops and Break
+
+ages = {'dad':42, 'mom':48, 'lisa':7}
+ages
+for item in ages:
+    print item
+
+for item inages:
+    print item, ages[item]
+
+while 1:
+    name = raw_input('Enter name: ')
+    if name == 'quit': break
+
+# 27 - Building Functions
+
+def whatsup(x):
+    return 'whats up ' + x
+
+print whatsup('tony')
+
+def plusten(y):
+    return y+10
+
+print plusten(44)
+
+# 28 - Default Parameters
+
+def name(first, last):
+    print '%s %s' % (first, last)
+
+name('Baihan', 'Lin')
+
+def name(first = 'tom', last = 'smith'):
+    print '%s %s' % (first, last)
+
+name()
+name('bucky')
+
+# 29 - Multiple Parameters
+
+def list(*food):
+    print food
+
+list('apples')
+list('apples', 'peaches', 'beef')
+
+def profile(name, *ages):
+    print name
+    print ages
+
+profile('bucky', 42, 43, 76, 54, 98)
+
+# 30 - Parameter Types
+
+
+
     
 raw_input("Press<enter>")
 
